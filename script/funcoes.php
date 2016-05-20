@@ -21,6 +21,7 @@ function close_database($conn) {
     }
 }
 
+/*
 function($post){
       // Create connection
 if($conn == false){
@@ -33,6 +34,7 @@ $a = $conn->query("INSERT INTO `customers`(`nome`, `email`, `datanasc`, `enderec
 
 $conn.close_database();
 }
+*/
 
 function produto($id){
     // Create connection
