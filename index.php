@@ -11,6 +11,14 @@
 			<script src="jquery/jquery-1.12.3.js"></script>
 			<script src="bootstrap/js/bootstrap.min.js"></script>
 			<script src="script/pagescript.js"></script>
+
+			<style type="text/css">
+			.prod{
+				font-size: 50px;
+			}
+
+			</style>
+
 		</head>
 	<!-- ====================================== -->
 	<!-- ====================================== -->
@@ -138,85 +146,11 @@
 							</ul>
 						</div>
 						<!-- pills -->
+
+						<a href="produtos"></a>
+						<iframe src="produtos.php"></iframe>
 					
-						<!-- Carrosel row-->
-						<div class="row">
-							<div class="container" id="ContainerCarrousel">
-				  				<br>
-							    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-								    <!-- Indicators -->
-								    <ol class="carousel-indicators">
-								      	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-									      <li data-target="#myCarousel" data-slide-to="1"></li>
-									      <li data-target="#myCarousel" data-slide-to="2"></li>
-									      <li data-target="#myCarousel" data-slide-to="3"></li>
-								    </ol>
 
-								    <!-- Wrapper for slides -->
-								    <div class="carousel-inner" role="listbox">
-							   			    <div class="item active">
-									    	    <a href="http://www.google.com" target="_blank"><img id="carrosel"src="img/marmitas.jpg" alt="Caneca pé de cachorro" width="1167" height="497">
-									    	    </a>
-								      		</div>
-
-								     		<div class="item">
-								        		<img src="img/presente-dia-dos-namorados.jpg" alt="Chania" width="1167" height="497">
-								      		</div>
-								    
-										    <div class="item">
-										        <img src="img/quadros-decorativos-3.jpg" alt="Flower" width="1167" height="497">
-										    </div>
-
-										    <div class="item">
-										        <img src="img/porta-rolhas.jpg" alt="Flower" width="1167" height="497">
-										    </div>
-								    </div>
-								     <!--carrousel inner-->
-
-								    <!-- Left and right controls -->
-								    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-								      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								      <span class="sr-only">Previous</span>
-								    </a>
-								    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-								      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-								      <span class="sr-only">Next</span>
-								    </a>
-								</div> <!--my carrousel-->
-										<!-- end Carrosel -->
-								<hr>
-								    	<!--Produtos-->
-								<div class="row" id="colArticle">
-									<div class="col-md-4">
-								    	<!--Imagem do produto-->
-										<a href=""><img class="img-thumbnail" alt="Cinque Terre" id="produto" src="img/canecacachorro.jpg"></a>
-									</div>
-									<div class="col-md-4">
-								    <!--Imagem do produto-->
-								        <a href=""><img id="produto" class="img-thumbnail" alt="Cinque Terre" src="img/canecagato.jpg"></a>
-								    </div>
-									<div class="col-md-4">
-									    <!--Imagem do produto-->
-									    <a href=""><img id="produto" class="img-thumbnail" alt="Cinque Terre" src="img/canecafoto.jpg"></a>
-									</div>
-								</div>
-								<div class="row" id="colArticle">
-									<div class="col-md-4">
-								    <!--Imagem do produto-->
-								        <a href=""><img id="produto" class="img-thumbnail" alt="Cinque Terre" src="img/garrafajack.jpg"></a>
-								    </div>
-									<div class="col-md-4">
-								          <!--Imagem do produto-->
-								        <a href=""><img id="produto" class="img-thumbnail" alt="Cinque Terre"produto src="img/iodalha.jpg"></a>
-								    </div>
-									<div class="col-md-4">
-								        <!--Imagem do produto-->
-								        	<a href=""><img id="produto" class="img-thumbnail" alt="Cinque Terre" src="img/interruptorpotter.jpg"></a>
-								    </div>
-								</div>
-							</div>
-							</div>
-						</div><!-- end Carrosel row-->
 					</div><!-- Container article-->
 				</div><!--end row article-->
 			</article><!-- fim container article-->
