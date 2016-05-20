@@ -1,0 +1,164 @@
+*{
+	
+}
+/*======= container geral =======*/
+.generalContainer{
+	
+}
+/*======== header ==============*/
+header{
+	background-color: orange;
+	height: 320px;
+	margin-bottom: -20px; 
+}
+/*navbar*/
+#searchlogin{
+	margin-left: 55%;
+}
+/*botão login*/
+#loginButton{
+	background-color: orange;
+	text-shadow: 1px 1px white;
+	margin-top: 8px; 
+}
+/*botão submit*/
+#submit{
+margin: 8px 15px 0px -10px; 
+}
+
+/*Titulo da barra de cima*/
+a.navbar-header{
+	margin-right: 20%;
+}
+a.navbar-brand>span{
+text-shadow:1px 1px lightgray;
+font-family: "Lucida Handwriting", Lucida;
+color: #e60000;
+}
+
+#colunaNome{
+	width: auto;
+	margin-top: -10px;
+	padding-top: 30px;
+	font-family: "Palatino";
+}
+
+/*modal*/
+.modal {
+  text-align: center;
+}
+/*centralizar modal*/
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#formBody{
+	display:inline-block;
+}
+/*form-control*/
+#forms-login{
+	width:73%;
+}
+/*parágrafo de cadastro*/
+#ask_cadastro{
+	margin-top: 20px;
+		width: 27%;
+		text-align: center;
+}
+#cadastro{
+	background-color: lightgreen;
+}
+/*==========================*/
+
+
+
+
+
+/*=================Artigo===================*/
+
+h1.centerArticle{
+	text-align: center;
+	font-family: "Lucida Handwriting", Lucida;
+}
+
+/*Forms*/
+#form{
+	margin-left: 70px;
+}
+#nome{
+	width: 60%;
+}
+#email{
+	width: 40%;
+}
+#telefone{
+	width: 25%;
+}
+#cpf{
+	width: 25%;
+}
+#endereco{
+	width: 60%;
+}
+#cep{
+	width: 30%;
+}
+#cidade, #estado{
+	width: 35%;
+}
+#submitcad{
+	background-color: lightgreen;
+	margin-left: 50%;
+	margin-bottom: 30px;
+}
+#secondCol{
+	width: 35%;
+	height: 610px;
+	border: outset 2px lightgray;
+	box-shadow: 1px 1px black;
+	border-radius: 20px;
+}
+#secondCol > h2{
+	font-family: "Lucida Handwriting", Lucida;
+	text-align: center;
+}
+#secondCol > p{
+
+font-family: "Palatino Linotype", Palatino;
+}
+/*Produtos*/
+#produto{
+	height: 280px;
+	width: 360px;
+
+}
+#produto:hover{
+	height: 290px;
+	width: 370px;
+
+	 opacity: 1;
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+}
+
+
+
+/*footer*/
+footer{
+	background-color: lightgray;
+	height: 50px;
+	padding-top: 10px;
+	
+}
+#footerspace{
+	width: 45%;
+}

@@ -1,0 +1,3 @@
+<?php 
+cadastro($_POST[]);
+?>

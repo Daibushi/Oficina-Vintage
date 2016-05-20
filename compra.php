@@ -1,4 +1,4 @@
-﻿	<!DOCTYPE html>
+	<!DOCTYPE html>
 	<html lang="pt-br">
 		<head>
 			<title>loja da Esquina</title>
@@ -11,6 +11,14 @@
 			<script src="jquery/jquery-1.12.3.js"></script>
 			<script src="bootstrap/js/bootstrap.min.js"></script>
 			<script src="script/pagescript.js"></script>
+
+			<style type="text/css">
+			.prod{
+				font-size: 50px;
+			}
+
+			</style>
+
 		</head>
 	<!-- ====================================== -->
 	<!-- ====================================== -->
@@ -80,13 +88,17 @@
 		        			<div class="modal-body">
 		          				<div class="row">
 		            				<div class="col-md-1" id="forms-login">
-		             					<div class="form-group">
+		             					<div class="form-group" method="post" >
 		               						<label for="usr">Name:</label>
-		               						<input type="text" class="form-control"id="usr">
+		               						<input type="text" class="form-control" id="usr" name="nome">
 		            					</div>
 		             					<div class="form-group" id="form-body">
 		                					<label for="pwd">Password:</label>
-		                					<input type="password" class="form-control" id="pwd">
+		                					<input type="password" class="form-control" name="psw" id="pwd">
+		              					</div>
+		              					<div>
+		              						<!--queria muito ter feito login-->
+ 											<button type="submit" class="btn btn-default" data-dismiss="modal" id="loginButton" >Login</button>
 		              					</div>
 		             				</div>
 		              			<div class="col-md-1" id="ask_cadastro">
@@ -99,7 +111,6 @@
 		        		</div><!--modalbody-->
 		         		<!--modal footer-->
 		        	<div class="modal-footer">
-		         		 <button type="button" class="btn btn-default" id="loginButton">Login</button>
 			       	</div>
 			   	</div><!--end myModal-->  
 	 		</header>
@@ -137,88 +148,34 @@
 							</ul>
 						</div>
 						<!-- pills -->
-						
-						<!-- Carrosel row-->
-						<div class="row">
-							<div class="container" id="ContainerCarrousel">
-				  				<br>
-							    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-								    <!-- Indicators -->
-								    <ol class="carousel-indicators">
-								      	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-									      <li data-target="#myCarousel" data-slide-to="1"></li>
-									      <li data-target="#myCarousel" data-slide-to="2"></li>
-									      <li data-target="#myCarousel" data-slide-to="3"></li>
-								    </ol>
-
-								    <!-- Wrapper for slides -->
-								    <div class="carousel-inner" role="listbox">
-							   			    <div class="item active">
-									    	    <a href="produtos.php" target="_blank"><img id="carrosel"src="img/marmitas.jpg" alt="Caneca pé de cachorro" width="1167" height="497">
-									    	    </a>
-								      		</div>
-
-								     		<div class="item">
-								        		<a href="produtos.php"><img src="img/presente-dia-dos-namorados.jpg" alt="Chania" width="1167" height="497">
-								      		</a></div>
-								    
-										    <div class="item">
-										    	<a href="produtos.php"><img src="img/quadros-decorativos-3.jpg" alt="Flower" width="1167" height="497">
-										    </a>
-										        </div>
-
-										    <div class="item">
-										        <a href="produtos.php"><img src="img/porta-rolhas.jpg" alt="Flower" width="1167" height="497">
-										    </a></div>
-								    </div>
-								     <!--carrousel inner-->
-
-								    <!-- Left and right controls -->
-								    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-								      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								      <span class="sr-only">Previous</span>
-								    </a>
-								    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-								      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-								      <span class="sr-only">Next</span>
-								    </a>
-								</div> <!--my carrousel-->
-										<!-- end Carrosel -->
-								<hr>
-								    	<!--Produtos-->
-								<div class="row" id="colArticle">
-									<div class="col-md-4" id="coluna4">
-								    	<!--Imagem do produto-->
-										<a href="produtos.php"><img class="img-thumbnail" alt="Cinque Terre" id="produto" src="img/canecacachorro.jpg"></a>
-									</div>
-									<div class="col-md-4" id="coluna4">
-								    <!--Imagem do produto-->
-								        <a href="produtos.php"><img id="produto" class="img-thumbnail" alt="Cinque Terre" src="img/canecagato.jpg"></a>
-								    </div>
-									<div class="col-md-4" id="coluna4">
-									    <!--Imagem do produto-->
-									    <a href="produtos.php"><img id="produto" class="img-thumbnail" alt="Cinque Terre" src="img/canecafoto.jpg"></a>
-									</div>
-								</div>
-								<div class="row" id="colArticle">
-									<div class="col-md-4" id="coluna4">
-								    <!--Imagem do produto-->
-								        <a href="produtos.php"><img id="produto" class="img-thumbnail" alt="Cinque Terre" src="img/garrafajack.jpg"></a>
-								    </div>
-									<div class="col-md-4" id="coluna4">
-								          <!--Imagem do produto-->
-								        <a href="produtos.php"><img id="produto" class="img-thumbnail" alt="Cinque Terre"produto src="img/iodalha.jpg"></a>
-								    </div>
-									<div class="col-md-4" id="coluna4">
-								        <!--Imagem do produto-->
-								        	<a href="produtos.php"><img id="produto" class="img-thumbnail" alt="Cinque Terre" src="img/interruptorpotter.jpg"></a>
-								    </div>
-								</div>
-							</div>
-							</div>
-						</div><!-- end Carrosel row-->
-
+						<div class="col-md-1"></div>
+						<div class="col-md-10" id="phpContainer">
+						<br>
+						<?php
+							include("script/funcoes.php");
+							$prod = $_GET['id'];
+							compra($prod);
+						?>
+						<br>
+						<br>
+						<form role="form">
+						  <div class="form-group">
+						    <label for="qtd">Quantidade:</label>
+						    <input type="qtd" class="form-control" id="qtd">
+						  </div>
+						</form>
+						<?php
+							echo '<hr>
+							<!--colocar if para caso já esteja logado-->
+							<button type="button" class="btn btn-default" id="comprar" data-toggle="modal" data-target="#myModal">Comprar</button>
+						'
+						?>
+					</div>
+						<div class="col-md-1"></div>
 					</div><!-- Container article-->
+					<div class="col-md-12">
+						</div>
+					
 				</div><!--end row article-->
 			</article><!-- fim container article-->
  		</div><!-- fecha container geral-->
